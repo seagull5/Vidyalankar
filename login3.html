@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>login form design</title>
+    <link rel="stylesheet" type="text/css" href="Style2.css">
+    <script>
+        function validate() {
+             if (register.n.value == "") {
+                  alert("Please enter User name");
+                  return false;
+             }
+             if(register.p.value == "") {
+                  alert("Please select your Password");
+                  return false;
+             }
+             
+             alert("Sucessful Login!!");
+        }
+   </script>
+</head>
+
+<body>
+<div class="loginbox">
+    <img src="lg4.png" class="avatar" >
+    <h1>Login Here</h1>
+    <form name = "register" onsubmit = "validate()">
+        <p>
+            <label for = "n">Username</label>
+            <input id = "n" name = "username" type = "email" placeholder = "Enter User name">
+       </p>
+       
+       <p>
+        <label for = "p">Password</label>
+        <input id = "p" name = "Password" type = "password" placeholder = "Enter Password">
+      </p>
+   
+        <br><br>
+        <input type="submit" name="" value="Login"><br>
+        <a href="#">Forgot Password?</a><br>
+      
+    </form>
+</div>
+
+</body>
+
+</html>

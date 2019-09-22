@@ -1,0 +1,88 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: url(VIT3.jpg);
+    background-size: cover;
+    
+    background-repeat: no-repeat;
+    font-family:  sans-serif;
+}
+.loginbox{
+    width: 320px;
+    height: 450px;
+    background: honeydew;
+    color:black;
+    top:50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+        box-sizing:border-box;
+        
+        padding: 70px 30px;
+}
+.avatar{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+    top: -20%;
+    left: 25%;
+}
+h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+.loginbox p{
+    margin: 0%;
+    padding: 0;
+    font-weight:bold;
+
+}
+.loginbox input{
+    width: 100%;
+    
+    margin-bottom: 20px;
+}
+.loginbox input[type="email"],input[type="password"]
+{
+
+    border: none;
+   border-bottom: 1px solid black;
+   background: transparent;
+   outline: none;
+   height: 40px;
+   color:black;
+   font-size: 16px;     
+}
+.loginbox input[type="submit"]
+{
+
+    border: none;
+    margin: none;
+    height: 40px;
+    background:red;
+    color:white;
+    font-size: 18px;
+    border-radius: 20px;
+    text-align: center;    
+}
+.loginbox input[type="submit"]:hover
+{
+    cursor: pointer;
+    background: #ffc107;
+    columns: #000000;
+
+}
+.loginbox a:{
+    text-align-last: right;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgray;
+}
+.loginbox a:hover{
+
+    color: ffc107;
+}
