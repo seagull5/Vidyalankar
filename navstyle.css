@@ -39,22 +39,17 @@ body {
   background-color: #3341FF;
 }
 
-.topnav1 a1 {
+.topnav1 a {
   float: left;
-  color: #00000;
+  background-color:black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
 }
 
-.topnav1 a1:hover {
+.topnav1 a:hover {
   background-color: #4CAF50;
-  color: black;
-}
-
-.topnav1 a1.active {
-  background-color: #00000C;
   color: black;
 }
 </style>
