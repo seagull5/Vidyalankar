@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>student table</title>
+</head>
+<body>
+	<table style=width:100%>
+		<caption>STUDENT ATTENDANCE</caption>
+		<tr>
+			<th>Student Name</th>
+			<th>Roll No</th>
+			<th>01/01/2019</th>
+		</tr>		
+	</table>
+
+</body>
+</html>
