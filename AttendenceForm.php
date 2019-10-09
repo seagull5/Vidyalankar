@@ -19,8 +19,10 @@
   <a href="#leave">Leave</a1>
   <a href="#attendance">Attendance</a1>
   <a href="#directory">Directory</a1>
-</div1>
+</div1><br><br><br>
+
 <?php  
+echo "<body style='background-color:#4CAF50'>";
 error_reporting(E_ALL ^ E_DEPRECATED);
 include("./connection.php");?>
 <div class="form-container">
@@ -59,5 +61,6 @@ include("./connection.php");?>
  </form>
  </div> <!--form-container-->
 </div>
+
 </body>
 </html><!--container-->
