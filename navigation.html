@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>transparent navigation bar</title>
+    <link rel="stylesheet" type="text/css" href="nav.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<style>
+    body {
+        background-color: cornflowerblue;
+    }
+
+    nav {
+        width: 100%;
+
+        height: 120px;
+        background: rgba(0, 0, 0, 0.808);
+
+        line-height: 100px;
+    }
+
+    nav ul {
+        float: right;
+        margin-right: 30px;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        display: inline-block;
+        transition: 0.8s all;
+
+    }
+
+    nav ul li:hover {
+        background-color: red;
+
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+        padding: 30px;
+    }
+
+    aside {
+        width: 230px;
+        float: left;
+        padding: 0px 10px 20px 10px;
+        border: 2px solid #efefef;
+    }
+
+    aside section a {
+        display: block;
+        padding: 50px 50px 20px 50px;
+        border-bottom: 2px solid #000;
+        color: azure;
+        text-decoration: none;
+    }
+
+    aside section a:hover {
+        color: coral;
+
+        background-color: #efefef;
+
+    }
+
+    .container {
+        position: relative;
+        left: -50px;
+        top: -200px;
+        width: 1200px;
+        height: 300px;
+        margin: 240px auto;
+    }
+
+    .container .box {
+        position: relative left:50px top:50px;
+        width: 370px;
+
+        height: 270px;
+
+        background: #000;
+        float: right;
+        margin: 15px;
+        box-sizing: border-box;
+        overflow: hidden;
+        border-radius: 10px;
+    }
+
+    .container .box .icon {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: #f00;
+        transition: 0.5s;
+        z-index: 1;
+    }
+
+    .container .box:hover .icon {
+        top: 20px;
+        left: 40%;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+    }
+
+    .container .box .icon .fa {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 80px;
+        transition: 0.5s;
+        color: white;
+    }
+
+    .container .box .icon:hover .fa {
+        font-size: 40px;
+    }
+    .container .box .content{
+        position: absolute;
+        top:115px;
+        height: 60%;
+        text-align: left;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+    .container .box .content{
+        top:100px;
+        opacity: 1;
+    }
+    .container .box .content h3{
+        margin: 0;
+        padding: 0;
+        color: #fff;
+        font-size: 24px;
+    }
+    .container .box .content p{
+        margin: 0;
+        padding: 0;
+        color:#fff;
+    }
+</style>
+
+<body>
+
+    <div id="main">
+
+        <nav>
+            <img src="VIT.PNG" width="200" height="120">
+            <ul>
+
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Add Student</a></li>
+                <li><a href="#">Mark Attendance</a></li>
+                <li><a href="#">Contact</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <aside>
+        <section class="info">
+            <h1>Quick Access</h1>
+            <a href="">Manage Leave</a>
+            <a href="">Post Documents</a>
+            <a href="">Message Board</a>
+            <a href="">Settings</a>
+            <a href="">Payroll</a>
+            <a href="">Files</a>
+
+        </section>
+    </aside>
+    <div class="container">
+        <div class="box">
+            <div class="icon"><i class="fa fa-money" aria-hidden="true"></i></div>
+            <div class="content">
+                <h3>Payroll</h3>
+                <p></p>
+            </div>
+        </div>
+        <div class="box">
+                <div class="icon"><i class="fa fa-file" aria-hidden="true"></i></div>
+                <div class="content">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+            <div class="box">
+                    <div class="icon"><i class="fa fa-bell" aria-hidden="true"></i></div>
+                    <div class="content">
+                        <h3></h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                        <div class="icon"><i class="fa fa-upload" aria-hidden="true"></i></div>
+                        <div class="content">
+                            <h3></h3>
+                            <p></p>
+                        </div>
+                    </div>
+        
+
+    </div>
+</body>
+
+</html>
